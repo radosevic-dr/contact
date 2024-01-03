@@ -59,6 +59,7 @@ export const Contact = () => {
 
   };
   return (
+    <div className=`${isLinkActive ? "hidden" : "" }`>
     <div className="max-w-[30rem] w-[100%] mx-auto bg-base-100 min-h-screen relative my-20">
       <div className="dui-container mx-auto min-h-screen" >
         <h2 className="text-2xl font-bold text-success mb-6 text-center">Kontakt</h2>
@@ -121,6 +122,7 @@ export const Contact = () => {
         </div> : null}
         <ToastContainer />
       </div>
+    </div>
     </div>
   );
 };
