@@ -117,7 +117,7 @@ export const Contact = () => {
           <button type="submit" disabled={submitting} className="dui-btn dui-btn-success w-full uppercase text-primary font-bold text-lg disabled:btn-neutral">Pošalji</button>
         </form>
         {isLinkActive ? <div className="text-center mt-10">
-          <Link href="https://www.codewilderness.me" className="text-info uppercase"><span className="animate-pulse pr-2">🪃</span> Nazad na početnu</Link>
+          <Link href="https://www.codewilderness.me/" className="text-info uppercase"><span className="animate-pulse pr-2">🪃</span> Nazad na početnu</Link>
         </div> : null}
         <ToastContainer />
       </div>
