@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+// import Link from "next/link";
 import axios from "axios";
 import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
@@ -13,7 +13,7 @@ export const Contact = () => {
   // reference for form reset
   const formRef = useRef(null);
   const [submitting, setSubmitting] = useState(false);
-  const [isLinkActive, setLinkActive] = useState(false);
+  // const [isLinkActive, setLinkActive] = useState(false);
   // form handling
   const { register, handleSubmit, formState } = useForm({
     resolver: yupResolver(validationSchema),
@@ -117,9 +117,9 @@ export const Contact = () => {
           <input name="_formsubmit_id" type="text" style={{ visibility: "hidden", height: 0, padding: 0 }} />
           <button type="submit" disabled={submitting} className="dui-btn dui-btn-success w-full uppercase text-primary font-bold text-lg disabled:btn-neutral">Pošalji</button>
         </form>
-        {isLinkActive ? <div className="text-center mt-10">
+{/*         {isLinkActive ? <div className="text-center mt-10">
           <Link href="https://www.codewilderness.me/" className="text-info uppercase"><span className="animate-pulse pr-2">🪃</span> Nazad na početnu</Link>
-        </div> : null}
+        </div> : null} */}
         <ToastContainer />
       </div>
     </div>
